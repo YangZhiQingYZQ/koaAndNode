@@ -1,0 +1,29 @@
+<!--
+ * @Author: YZQ
+ * @Description: 公用文件模板
+ * @Date: 2019-09-20 14:12:16
+ * @LastEditors: YZQ
+ * @LastEditTime: 2019-09-20 14:15:13
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>{{title}}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+        {% include "./header.html" %}
+
+        {% block body %}{% endblock %}
+
+        {% include "./footer.html" %}
+
+        {% block content %}{% endblock %}
+
+    </body>
+
+</html>
